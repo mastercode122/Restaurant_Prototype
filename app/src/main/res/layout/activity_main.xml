@@ -7,43 +7,12 @@
     android:id="@+id/WelcomeScreen"
     android:background="#ff000000">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/actionbarLinearLayout">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Menu Take-out Locations"
-            android:id="@+id/actionbarText"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:textSize="25dp" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/app_name"
-        android:id="@+id/textView"
-        android:gravity="center"
-        android:textSize="40dp"
-        android:typeface="serif"
-        android:layout_centerInParent="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_button"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/chaithailogo"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:typeface="monospace" />
-
+        android:layout_marginTop="52dp" />
 </RelativeLayout>
