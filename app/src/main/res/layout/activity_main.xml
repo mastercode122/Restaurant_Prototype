@@ -11,7 +11,8 @@
         android:layout_width="fill_parent"
         android:layout_height="300dp"
         android:id="@+id/logoView"
-        android:src="@drawable/chaithailogo" />
+        android:src="@drawable/chaithailogo"
+        android:contentDescription="@string/logo" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
