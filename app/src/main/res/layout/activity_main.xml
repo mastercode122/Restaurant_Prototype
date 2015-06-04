@@ -8,11 +8,39 @@
     android:background="#ff000000">
 
     <ImageView
-        android:layout_width="400dp"
+        android:layout_width="fill_parent"
         android:layout_height="300dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/chaithailogo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp" />
+        android:id="@+id/logoView"
+        android:src="@drawable/chaithailogo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_login"
+        android:id="@+id/loginButton"
+        android:layout_alignBottom="@+id/logoView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_menu"
+        android:id="@+id/ldmenuButton"
+        android:layout_below="@+id/logoView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_locations"
+        android:id="@+id/locationsButton"
+        android:layout_alignTop="@+id/ldmenuButton"
+        android:layout_toRightOf="@+id/ldmenuButton"
+        android:layout_toEndOf="@+id/ldmenuButton" />
 </RelativeLayout>
