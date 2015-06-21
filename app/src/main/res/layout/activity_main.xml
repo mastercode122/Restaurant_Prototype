@@ -53,4 +53,11 @@
             android:layout_toEndOf="@+id/ldmenuButton" />
     </RelativeLayout>
 
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#444444"/>
+
 </android.support.v4.widget.DrawerLayout>

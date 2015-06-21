@@ -3,19 +3,27 @@ package com.cas.chaithaiapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 //import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity{
+
+    private ListView mDrawerList;
+    private ArrayAdapter<String> mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mDrawerList = (ListView)findViewById(R.id.navList);
+
+        addDrawerItems();
         Button menuButton = (Button) findViewById(R.id.ldmenuButton);
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +34,12 @@ public class MainActivity extends AppCompatActivity{
 //        android.support.v7.app.ActionBar ab = getSupportActionBar();
 //        ab.setDisplayShowHomeEnabled(true);
 //        ab.setIcon(R.mipmap.ic_launcher);
+    }
+
+    private void addDrawerItems() {
+        String[] osArray = { "Menu", "Locations", "Store Hours", "Search", "Settings", "About Us"};
+        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, osArray);
+        mDrawerList.setAdapter(mAdapter);
     }
 
     @Override
